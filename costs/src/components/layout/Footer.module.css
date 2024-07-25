@@ -16,7 +16,7 @@
 }
 
 .social_list li:hover {
-  color: #ffbb22;
+  color: #ffbb33;
 }
 
 .social_list svg {
@@ -26,5 +26,5 @@
 
 .span {
   font-weight: bold;
-  color: #ffbb22;
+  color: #ffbb33;
 }
