@@ -4,11 +4,13 @@ import { useState, useEffect } from "react";
 import styles from "./Projects.module.css";
 import Container from "../layout/Container";
 import LinkButton from "../layout/LinkButton";
+import Loading from "../layout/Loading";
 import Message from "../layout/Message";
 import ProjectsCard from "../projects/ProjectsCard";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
+  const [removeLoagind, setRemoveLoagind] = useState(false);
 
   const location = useLocation();
   let message = "";
@@ -24,6 +26,7 @@ function Projects() {
       .then((resp) => resp.json())
       .then((data) => {
         setProjects(data);
+        setRemoveLoagind(true);
       })
       .catch((err) => console.log(err));
   }, []);
@@ -46,6 +49,10 @@ function Projects() {
               key={project.id}
             />
           ))}
+        {!removeLoagind && <Loading />}
+        {removeLoagind && projects.length === 0 && (
+          <p>Não há projetos cadastrados.</p>
+        )}
       </Container>
     </div>
   );
