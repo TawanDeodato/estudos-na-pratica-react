@@ -1,5 +1,17 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "id": "54e5",
+      "name": "Projeto teste",
+      "budget": "5000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": []
+    }
+  ],
   "categories": [
     {
       "id": "1",
