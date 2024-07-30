@@ -8,14 +8,8 @@
         "id": "3",
         "name": "Design"
       },
-      "cost": 1000,
+      "cost": 500,
       "services": [
-        {
-          "name": "Serviço teste",
-          "cost": "500",
-          "description": "Esse é um serviço teste",
-          "id": "fb4ecf12-9258-488a-b294-d61992bd6c86"
-        },
         {
           "name": "Contratando design freela",
           "cost": "500",
