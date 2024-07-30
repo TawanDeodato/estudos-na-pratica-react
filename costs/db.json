@@ -8,8 +8,21 @@
         "id": "3",
         "name": "Design"
       },
-      "cost": 0,
-      "services": []
+      "cost": 1000,
+      "services": [
+        {
+          "name": "Serviço teste",
+          "cost": "500",
+          "description": "Esse é um serviço teste",
+          "id": "fb4ecf12-9258-488a-b294-d61992bd6c86"
+        },
+        {
+          "name": "Contratando design freela",
+          "cost": "500",
+          "description": "Vai ser responsável pelo design dos botões",
+          "id": "5c255748-3eae-4d3c-9c6c-9ee260c86814"
+        }
+      ]
     }
   ],
   "categories": [
